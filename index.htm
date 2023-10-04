@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro projeto ♥</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body class="cor-de-fundo">
+
+   
+    <h1 class="a"> Título de Nível 01</h1>
+    <h2 class="a"> Título de Nível 02</h2>
+    <h3 class="a"> Título de Nível 03</h3>
+    <h4 class="a"> Título de Nível 04</h4>
+    <h5 class="a"> Título de Nível 05</h5>
+    <h6 class="a"> Título de Nível 06</h6>
+
+    <h2 class="a cor-de-fundo2"> Margin- 80px</h2>
+
+    <p class="cor-de-fundo3 margem"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Veniam et, aperiam corrupti hic accusamus omnis itaque unde fuga similique incidunt, 
+        dolorum vitae commodi. 
+        Doloribus neque ea minima dignissimos, fugiat debitis.</p>
+    
+        <h2 class="cor-de-fundo2 a"> Padding-80px</h2>
+        <p class="a cor-de-fundo3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis dolore consectetur aliquid dignissimos eos aut, 
+            quis nulla nobis doloribus nam nesciunt molestias rerum illum error expedita quo voluptatum fugit et.</p>
+
+            <h2 class="a cor-de-fundo2">Border-20px</h2>
+            <p class="cor-de-fundo3 borda"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Alias laboriosam maiores nam ipsam sint suscipit at repellendus blanditiis libero, illo perspiciatis. 
+                Natus incidunt velit repellat aliquam distinctio doloremque suscipit ipsum!</p>
+
+                <hr>
+                <h3 class="a"> a-link </h3>
+<p class="a"> <a href="https://jabrasil.org.br/elasnatech23/" target=" _blank"> Acesse aqui</a></p>
+                
+<hr>
+
+<h3> Lista não ordenada</h3>
+<ul>
+    <li> Item 01</li>
+    <li> Item 02</li>
+    <li> Item 03</li>
+    </ul>
+    <hr>
+<h3> Lista ordenada</h3>
+<ol>
+    <li> Item 01</li>
+    <li> Item 02</li>
+    <li> Item 03</li>
+</ol>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
